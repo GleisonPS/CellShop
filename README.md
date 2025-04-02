@@ -1,13 +1,21 @@
-# Cell_Shop
+# Cell Shop
 
-**Cell_Shop** é uma aplicação web para gerenciar um inventário de celulares e realizar vendas online. Desenvolvido com o framework Flask, este projeto visa fornecer uma interface amigável para a administração de produtos e pedidos.
+**Cell Shop** é uma aplicação web desenvolvida para gerenciar o inventário de periféricos de celulares e facilitar vendas online de forma eficiente. Utilizando o framework Flask, o projeto oferece uma interface intuitiva e responsiva, com o objetivo é simplificar a administração do estoque e otimizar o processo de vendas, proporcionando uma experiência prática e acessível tanto para administradores quanto para clientes.
 
 ## Recursos
 
-- **Gerenciamento de Produtos**: Adicione, edite e exclua celulares no inventário.
+- **Gerenciamento de Produtos**: Adicione, edite, busque e exclua do inventário.
 - **Vendas e Pedidos**: Crie e gerencie pedidos de venda.
-- **Usuários**: Sistema de autenticação e autorização para administradores e clientes.
-- **Relatórios**: Visualize relatórios de vendas e estoque.
+- **Usuários**: Sistema dividido entre administradores e clientes.
+
+ ## Tecnologias
+
+- Html5
+- Css3
+- JavaScript (ES6)
+- Python 3.8
+- Flask 3.1.0
+- Git
 
 ## Pré-requisitos
 
@@ -21,8 +29,8 @@ Antes de começar, verifique se você tem os seguintes pré-requisitos instalado
 1. **Clone o repositório:**
 
    ```bash
-   git clone https://github.com/seu-usuario/CellShop.git
-   cd Cell_Shop
+   git clone https://github.com/pedrobarroso-n/CellShop.git
+   cd CellShop
    ```
 
 2. **Crie um ambiente virtual (opcional, mas recomendado):**
@@ -63,23 +71,31 @@ Antes de começar, verifique se você tem os seguintes pré-requisitos instalado
 
    Acesse a aplicação em [http://localhost:5000](http://localhost:5000).
 
-## Estrutura do Projeto
+## Estrutura Principal
 
-- **static/**: Arquivos estáticos (pecularidade do framework).
-   - **css/** - Arquivos .css
-   - **img/** - Arquivos .png .jps .jpge
-   - **js/** - Arquivos .js
-- **templates/**: Arquivos de template HTML.
-   - **pastas/** - 6 ao todo, cada uma representa um tipo de produto.
-   - **index.html** - Hmtl principal, página home.
-- **main.py**: Controle e gerencia do banco de dados.
-- **bd.py**: Estrutura do banco de dados.
-- **Db.sql**: Banco de dados do projeto.
+- **api**: Pasta unificada para usabilidade do servidor de hospedagem
+   - **static/**: Pasta de arquivos estáticos.
+      - **css/** - Arquivos .css
+      - **img/** - Arquivos de imagem
+      - **js/** - Arquivos .js
+   - **templates/**: Pasta de arquivos html.
+      - **pasta/index.html** - Cada pasta representa um tipo de produto com seu index.html para usabilidade.
+      - **index.html** - Página html principal(home page), inicial na navegação do sistema.
+   - **main.py** - Controle e gerencia do banco de dados.
+   - **bd.py** - Estrutura do banco de dados.
+
+- **Db.sql** - Banco de dados do projeto.
+- **vercel.json** - Controle de arquivos carregados pelo servidor de hospedagem
 
 ## Contribuições
 
-1. [@GleisonPS](https://github.com/GleisonPS)
+1. [@pedrobarroso-n](https://github.com/pedrobarroso-n/)
 2. [@Ranykelle21](https://github.com/Ranykelle21)
+3. [@GleisonPS](https://github.com/GleisonPS)
+
+## Acesso Simplificado
+
+   Acesse a aplicação on-line em [https://cellshop-p2.vercel.app/](https://cellshop-p2.vercel.app/)
 
 ## Licença
 
